@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Document</title>
+<style>
+    body{
+        width: 100%;
+        height: auto;
+    }
+    .wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sub-wrap{
+        width: 900px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+        width: 600px;
+    }
+    .title{
+        margin-top: -40px;
+        text-align: center;
+    }
+    .title h1{
+        font-family: 'Martian Mono', monospace;   
+    }
+    .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image-form{
+        width: 500px;
+    }
+    label{
+        font-family: 'Roboto Mono', monospace;
+    }
+    form{
+        margin-top: 50px;
+        font-family: 'Roboto Mono', monospace;
+    }
+    .form-group{
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    option{
+        font-family: 'Roboto Mono', monospace;
+    }
+    input{
+        margin-top: 10px;
+        
+    }
+    .input-box{
+        width: 100%;
+        margin-top: 10px;
+        padding: 6px 0px;
+        border-radius: 3px;
+        border: 1px solid #202020;
+        font-family: 'Roboto Mono', monospace;
+    }
+    .btn{
+        display: block;
+        width: 100px;
+        padding: 5px;
+        font-family: 'Roboto Mono', monospace;
+    }
+    .btn-submit{
+        background-color: #292929;
+        border: 2px solid #d1d1d1;
+        color: #f7f7f7;
+    }
+    .btn-cancel{
+        margin-left: 10px;
+    }
+    .button-wrap{
+        display: flex;
+    }
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="sub-wrap">
+            <div class="form">
+                <div class="image">
+                    <img src="working.svg" alt="" class="image-form">
+                </div>
+                <div class="title">
+                    <h1>Form Registrasi</h1>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <div class="form-control">
+                            <label for="input-nama">Nama</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" id="input-nama" class="input-box">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-control">
+                            <label for="input-alamat">Alamat</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" id="input-alamat" class="input-box">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-control">
+                            <label for="jenis_kelamin">Jenis Kelamin</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="radio" value="laki-laki" id="jenis_kelamin">Laki - Laki
+                            <input type="radio" value="perempuan" id="jenis_kelamin">Perempuan
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-control">
+                            <label for="pekerjaan">Pekerjaan</label>
+                        </div>
+                        <div class="form-control">
+                            <select name="" id="" class="input-box">
+                                <option value="Pelajar">Pelajar</option>
+                                <option value="Gamer">Gamer</option>
+                                <option value="Designer">Designer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-control">
+                            <label for="hobby">Hobby</label>
+                        </div>
+                        <div class="form-control">
+                            <input type="checkbox" id="hobby" value="Game">Bermain Game
+                            <input type="checkbox" id="hobby" value="Editing">Editing
+                            <input type="checkbox" id="hobby" value="Photography">Photography
+                        </div>
+                    </div>
+                    <div class="form-group button-wrap">
+                        <button class="btn btn-submit">Submit</button>
+                        <button class="btn btn-cancel">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
